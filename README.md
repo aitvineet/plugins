@@ -1,4 +1,4 @@
 # plugins
 
-## By - ViNeEt 
-        Atlogys Technical Consultancy
+By - ViNeEt 
+Atlogys Technical Consultancy

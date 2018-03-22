@@ -1,4 +1,5 @@
-//(function() {
+(function() {
+
 
 angular.module( 'rte-module', [] )
 
@@ -3419,4 +3420,4 @@ angular.module( 'rte-module', [] )
 
 ;
 
-//}());
+}());

@@ -174,7 +174,8 @@
 				head = document.querySelector("head"),
 				style = document.createElement('link');
 			
-			script.src = 'vendor/tinymce/plugins/emojione/dist/emojione_jsdeliver.min.js';
+			//script.src = 'vendor/tinymce/plugins/emojione/dist/emojione_jsdeliver.min.js';
+			script.src = 'https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/plugins/emojione/dist/emojione_jsdeliver.min.js';
 			/*style.type = "text/css";
 			style.href = "https://cdn.jsdelivr.net/emojione/2.2.7/assets/css/emojione.min.css";
 			

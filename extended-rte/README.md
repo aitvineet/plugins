@@ -1,4 +1,4 @@
 # Exteded-RTE
 
 Demo : 
-https://plnkr.co/edit/ABKymHdwuDpdLSmzKWZ8?p=preview
+https://embed.plnkr.co/ABKymHdwuDpdLSmzKWZ8/

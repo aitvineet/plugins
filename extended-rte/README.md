@@ -1,4 +1,1 @@
-# plugins
-
-By - ViNeEt 
-## Atlogys Technical Consultancy
+# Exteded-RTE

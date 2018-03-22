@@ -1,5 +1,14 @@
 (function() {
 
+    function loadCssFn(url) {
+        var link = document.createElement("link");
+        link.rel  = 'stylesheet';
+        link.type = 'text/css';
+        link.media = 'all';
+        link.href = url;
+        document.head.appendChild(link);
+    }
+
     function loadScriptFn(url) {
         var script = document.createElement("script");
         script.src = url;
@@ -8,6 +17,8 @@
         script.async = false;
         document.head.appendChild(script);
     }
+
+    loadCssFn('vendor/tinymce/plugins/emojione/dist/emojione.sprites.css');
 
     loadScriptFn('vendor/jquery/jquery.min.js');
     loadScriptFn('vendor/angular/angular.1.6.min.js');

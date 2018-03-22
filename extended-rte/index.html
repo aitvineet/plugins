@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="rte-module">
+
+  <head>
+
+    <title>Exteded-RTE</title>
+
+    <link rel="stylesheet" href="vendor/tinymce/plugins/emojione/dist/emojione.sprites.css" media="all" />
+
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/angular/angular.1.6.min.js"></script>
+    <script type="text/javascript" src="vendor/tinymce/plugins/emojione/dist/emojione.picker.js"></script>
+    <script type="text/javascript" src="vendor/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="extended-rte.js"></script>
+
+  </head>
+
+  <body>
+
+    <p>Exteded-RTE</p>
+
+    <br/>
+    <input type="text" name="test1">
+
+    <br/><br/>
+    <textarea></textarea>
+
+    <br/><br/>
+    <label ng-show="true">RTE:</label>
+    <br/><br/>--{{detail}}--
+    <extended-Rte edi-id="textareaID1" 
+      edi-model="detail" char-count-limit="2500">
+    </extended-Rte>
+
+  </body>
+
+</html>

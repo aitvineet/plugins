@@ -1,0 +1,54 @@
+.mce-window{
+  border: 1rem solid #f5f6f5 !important;
+  padding: 6px;
+  border-width: 1rem !important;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	color: #5d6461;
+}
+.mce-window .mce-close{
+  font-weight: normal !important;
+  font-size: 1.75rem !important;
+  border: 1px solid !important;
+  border-radius: 50%;
+  padding: 0 !important;
+  text-align: center !important;
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+  color: #00b1ba !important;
+  margin-top: 9px !important;
+  width: 20px !important;
+  height: 21px !important;
+}
+.mce-window .mce-close:hover{
+	background: none !important;
+	color: #ef9900 !important;
+}
+.mce-window button{
+	padding: 8px !important;
+	font-weight: normal;
+}
+.mce-window button:hover, .mce-window button i:hover{
+  background: #00b1ba;
+  color: #ffffff;
+}
+.mce-window .mce-primary button, .mce-window .mce-primary button i{
+	color: #00b1ba;
+	text-shadow: none;
+}
+.mce-window .mce-primary button:hover, .mce-window .mce-primary button i:hover{
+	color: #fff !important;
+}
+.mce-window .mce-title {
+  border-top: 1px solid #00b1ba;
+  padding-top: 11px;
+  font-weight: normal !important;
+  font-size: 1.429rem !important;
+  color: #003e4a;
+}
+.mce-window .mce-tabs {
+  display: none !important;
+}

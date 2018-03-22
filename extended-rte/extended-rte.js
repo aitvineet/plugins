@@ -150,10 +150,37 @@ angular.module( 'rte-module', [] )
         return $window.sessionStorage;
     };
 
+    var extractURL = function() {
+        return {
+            method: 'GET',
+            //url: "https://api.embed.ly/1/extract?key=:9b9cb98708c9443f9c643dd9d1a41653&url=http://techcrunch.com/2010/11/18/mark-zuckerberg/&maxwidth=500",
+            //url: "https://api.embed.ly/1/extract?key=9b9cb98708c9443f9c643dd9d1a41653&url=@id",
+            url: "https://api.embed.ly/1/oembed?key=9b9cb98708c9443f9c643dd9d1a41653&url=@id",
+            dataType: 'json',
+            stopTracking: true,
+            params: {
+                //key: '9b9cb98708c9443f9c643dd9d1a41653',
+                //url: 'http://techcrunch.com/2010/11/18/mark-zuckerberg/&maxwidth=500'
+            }
+            //,headers:  apiService.getLoggedInHttpHeader(),
+        };
+    };
+
+    var submitRequest = function(aRequest) {
+        return $http(aRequest);
+    };
+
+    var processResponse = function(aResponse) {
+        return  aResponse.data;
+    };
+
     return {
         isMobile : isMobile,
         scrollToEleView : scrollToEleView,
-        getUserAgent : getUserAgent
+        getUserAgent : getUserAgent,
+        extractURL : extractURL,
+        submitRequest : submitRequest,
+        processResponse : processResponse
     };
 
 })
@@ -2966,7 +2993,7 @@ angular.module( 'rte-module', [] )
             ctrl.rmeUrl = '';
             ctrl.rmeUrl = srcUrl;
             //$scope.ediModel = ctrl.buildFullModelVal();
-            ctrl.acceptRequest( 'MODMETA', libraryService.extractURL(), srcUrl, false );
+            ctrl.acceptRequest( 'MODMETA', apiService.extractURL(), srcUrl, false );
         }
     };
 

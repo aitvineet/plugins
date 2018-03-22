@@ -27,10 +27,28 @@
 
     <br/><br/>
     <label ng-show="true">RTE:</label>
-    <br/><br/>--{{detail}}--
-    <extended-Rte edi-id="textareaID1" 
-      edi-model="detail" char-count-limit="2500">
-    </extended-Rte>
+    <br/><br/>
+
+    <table>
+      <tr>
+        <th>Sample 1</th>
+        <th>Sample 2</th>
+      </tr>
+      <tr min-width="100%">
+        <td max-width="50%">
+          <extended-Rte edi-id="textareaID1" 
+            edi-model="detail" char-count-limit="2500">
+          </extended-Rte>
+          <br/>
+        </td> 
+        <td max-width="50%">
+          <extended-Rte edi-id="textareaID2" 
+            edi-model="detail2">
+          </extended-Rte>
+          <br/>
+        </td>
+      </tr>
+    </table>
 
   </body>
 

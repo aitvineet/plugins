@@ -44,6 +44,13 @@ angular.module( 'rte-module', [] )
 })
 
 
+.filter('trustAsHtmlFilter', function($sce) { 
+    return  function(str){ 
+        return $sce.trustAsHtml(str);
+    };
+})
+
+
 .service('dirtyFormService', function() {
 
     var dirtyFormFlg = null;
@@ -156,29 +163,29 @@ angular.module( 'rte-module', [] )
 
     var testTemplate2 =
         '<div id="@@@RTEMainID@@@" class="hide-rte-main {{!getgrpobj() ? \'upload-doc-btn\' : \'\'}}">' +
-        ' <div ng-show="disableTextArea && aAdvRTEditorTmceCtrl.initLoadFlg" class="hide-rte-top">' +
-        '  {{aAdvRTEditorTmceCtrl.disabledText}}' +
+        ' <div ng-show="disableTextArea && aRTECtrl.initLoadFlg" class="hide-rte-top">' +
+        '  {{aRTECtrl.disabledText}}' +
         ' </div>' +
         ' <div class="{{disableTextArea ? \'textarea-hide\' : \'\' }}">' +
-        '  <div class="textEditorStyle {{(focusBorder && aAdvRTEditorTmceCtrl.hasFocus) ? aAdvRTEditorTmceCtrl.hasFocus : \'\' }} {{(aAdvRTEditorTmceCtrl.hidemenubarFlg) ? aAdvRTEditorTmceCtrl.hidemenubarFlgCls : \'\' }}">' +
-        '   <div id="@@@masterDivID@@@" ng-init="aAdvRTEditorTmceCtrl.init()">' +
+        '  <div class="textEditorStyle {{(focusBorder && aRTECtrl.hasFocus) ? aRTECtrl.hasFocus : \'\' }} {{(aRTECtrl.hidemenubarFlg) ? aRTECtrl.hidemenubarFlgCls : \'\' }}">' +
+        '   <div id="@@@masterDivID@@@" ng-init="aRTECtrl.init()">' +
         '    <div class="containerClassImp @@@classid@@@"></div>' +
         '   </div>' +
-        '   <div class="rmeBlock" ng-if="aAdvRTEditorTmceCtrl.rmeSupportFlg && aAdvRTEditorTmceCtrl.getModelRMEVal().length">' +
+        '   <div class="rmeBlock" ng-if="aRTECtrl.rmeSupportFlg && aRTECtrl.getModelRMEVal().length">' +
         '       <div class="field-container"><div class="textEditorImg">' +
-        '           <a class="icon-close-active right" title="Remove Image" ng-click="aAdvRTEditorTmceCtrl.resetRMEImg()" ng-if="aAdvRTEditorTmceCtrl.modelDataRMEImg.length"></a>' +
-        '           <span ng-bind-html="aAdvRTEditorTmceCtrl.modelDataRMEImg"></span>' +
+        '           <a class="icon-close-active right" title="Remove Image" ng-click="aRTECtrl.resetRMEImg()" ng-if="aRTECtrl.modelDataRMEImg.length"></a>' +
+        '           <span ng-bind-html="aRTECtrl.modelDataRMEImg"></span>' +
         '           </div><div class="textEditorContent">' +
-        '           <a class="icon-close-active right" title="Remove HTML" ng-click="aAdvRTEditorTmceCtrl.resetRMEData()" ng-if="aAdvRTEditorTmceCtrl.modelDataRMEData.length"></a>' +
-        '           <span ng-bind-html="aAdvRTEditorTmceCtrl.modelDataRMEData"></span>' +
+        '           <a class="icon-close-active right" title="Remove HTML" ng-click="aRTECtrl.resetRMEData()" ng-if="aRTECtrl.modelDataRMEData.length"></a>' +
+        '           <span ng-bind-html="aRTECtrl.modelDataRMEData"></span>' +
         '       </div></div>' +
         '   </div>' +
-        '   <span ng-if="charCountLimit && (!aAdvRTEditorTmceCtrl.hidemenubarFlg || aAdvRTEditorTmceCtrl.focusActive)" class="count-width" '+
-        '       ng-bind-html="ediModel | lengthWithoutHtmlTags : charCountLimit:1">'+
+        '   <span ng-if="charCountLimit && (!aRTECtrl.hidemenubarFlg || aRTECtrl.focusActive)" class="count-width" '+
+        '       ng-bind-html="ediModel | lengthWithoutHtmlTags : charCountLimit:1 | trustAsHtmlFilter ">'+
         '   </span>'+
-        '   <div ng-if="submitText && ((!aAdvRTEditorTmceCtrl.hidemenubarFlg) || aAdvRTEditorTmceCtrl.showSaveBtnHiddenMenu)" class="rte-cancel-reply-btn">' +
+        '   <div ng-if="submitText && ((!aRTECtrl.hidemenubarFlg) || aRTECtrl.showSaveBtnHiddenMenu)" class="rte-cancel-reply-btn">' +
         '       <span class="no-fill">' +
-        '           <a href title="Cancel" ng-click="aAdvRTEditorTmceCtrl.cancelFunc();">' +
+        '           <a href title="Cancel" ng-click="aRTECtrl.cancelFunc();">' +
         '               <span class="label-title">Cancel</span>' +
         '           </a>' +
         '       </span>' +
@@ -190,13 +197,13 @@ angular.module( 'rte-module', [] )
         '           </a>' +
         '       </span>' +
         '    </div>' +
-        '    <div class="delete-frame padding-0" ng-if="aAdvRTEditorTmceCtrl.rmeSupportFlg && aAdvRTEditorTmceCtrl.getModelRMELinkVal().length">'+
-        '       <div class="margin-20 padding-20 show-icon-hover {{aAdvRTEditorTmceCtrl.getModelRMELinkVal().length - 1 !== $index ? \'border-bottom-1px\': \'\'}}" '+
-        '           ng-repeat="modelRMEVal in aAdvRTEditorTmceCtrl.getModelRMELinkVal() | orderBy: \'timestamp\':true" >' +
-        '           <div class="delete-icon-rte" ng-click="aAdvRTEditorTmceCtrl.removeModelRMELink($index);"></div>' +
+        '    <div class="delete-frame padding-0" ng-if="aRTECtrl.rmeSupportFlg && aRTECtrl.getModelRMELinkVal().length">'+
+        '       <div class="margin-20 padding-20 show-icon-hover {{aRTECtrl.getModelRMELinkVal().length - 1 !== $index ? \'border-bottom-1px\': \'\'}}" '+
+        '           ng-repeat="modelRMEVal in aRTECtrl.getModelRMELinkVal() | orderBy: \'timestamp\':true" >' +
+        '           <div class="delete-icon-rte" ng-click="aRTECtrl.removeModelRMELink($index);"></div>' +
         '               <div class="thick-border">' +
         '               <div class="position-relative tinymcd-img image-delete-rme" ng-if="modelRMEVal.image && modelRMEVal.image!==\'\'">' +
-        '                   <div class="delete-icon-rte" ng-click="aAdvRTEditorTmceCtrl.removeModelRMELink($index, true);"></div>' +
+        '                   <div class="delete-icon-rte" ng-click="aRTECtrl.removeModelRMELink($index, true);"></div>' +
         '                   <div ng-bind-html="modelRMEVal.image"></div>' +
         '               </div>'+
         '               <div ng-bind-html="modelRMEVal.data"></div>' +
@@ -206,11 +213,12 @@ angular.module( 'rte-module', [] )
         '    </div>'+
         '    <div>' +
 
-        '       <div ng-if="aAdvRTEditorTmceCtrl.previewMode" class="modal">' +
+        '       <div ng-if="aRTECtrl.previewMode" class="modal">' +
         '           <div class="modal-content column-gutter6">' +
         '               <div class="group-info"><div class="heading-group"><h2>Preview</h2></div>' +
-        '               <div class="textEditorPreview" img-Expand-Dir ng-model="aAdvRTEditorTmceCtrl.getFullModelValData" is-preview=true></div>' +
-        '               <div style="clear:both" ng-click="aAdvRTEditorTmceCtrl.updatePrvMode(false);" class="btn right">OK </div>' +
+        //'               <div class="textEditorPreview" img-Expand-Dir ng-model="aRTECtrl.getFullModelValData" is-preview=true></div>' +
+        '               <div class="textEditorPreview" ng-bind-html="aRTECtrl.getFullModelValData | trustAsHtmlFilter"></div>' +
+        '               <div style="clear:both" ng-click="aRTECtrl.updatePrvMode(false);" class="btn right">OK </div>' +
         '               </div>' +
         '           </div>' +
         '       </div>' +
@@ -232,8 +240,8 @@ angular.module( 'rte-module', [] )
     return {
         restrict: 'E',
         //templateUrl: "demo/ng-examples/adv-ckeditor.tpl.html",
-        controller: "AdvRTEditorTmceCtrl",
-        controllerAs: "aAdvRTEditorTmceCtrl",
+        controller: "RTECtrl",
+        controllerAs: "aRTECtrl",
         scope: {
             ediId: "@",
             ediClass: "@",
@@ -276,7 +284,7 @@ angular.module( 'rte-module', [] )
     };
 
 } )
-.controller( 'AdvRTEditorTmceCtrl', function AdvRTEditorTmceCtrl( $scope, $filter, 
+.controller( 'RTECtrl', function RTECtrl( $scope, $filter, 
     $location, $timeout, $anchorScroll, $http, apiService, dirtyFormService ) {
 
     var ctrl = this;
@@ -981,7 +989,7 @@ angular.module( 'rte-module', [] )
         //console.log('blured',ctrl.customConvertUrl(currData));
         //ctrl.vanillaLoadFlg = false;
 
-        var linkInsertCallBackFn = apiService.getLinkInsertCallBackFn();
+        ////var linkInsertCallBackFn = apiService.getLinkInsertCallBackFn();
 
         if ( ctrl.hideonblurflg && ctrl.getModelVal() === "" && !ctrl.customImgUpldMode &&
             !ctrl.custLinkPopFlg && !linkInsertCallBackFn ) { // && !ctrl.focusDone
@@ -2082,8 +2090,9 @@ angular.module( 'rte-module', [] )
             if ( $scope.annoFlg ) {
                 toolbarOptions = "insertButton | annotationButton | emoji";
             } else {
+                //insertButton | 
                 toolbarOptions =
-                    "insertButton | customfontsize | bold | italic | bullist | numlist | outdent | indent | emoji";
+                    "customfontsize | bold | italic | bullist | numlist | outdent | indent | emoji | preview";
             }
         }
 

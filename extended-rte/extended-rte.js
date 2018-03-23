@@ -2020,7 +2020,7 @@ angular.module( 'rte-module', [] )
             var tmpEditorBookMark = editorInst.selection.getBookmark( 0, true );
 
             editorInst.insertContent(
-                '<span class="loader" id="tmcLoaderID"><img src="assets/images/pdf-viewer/loading-icon.gif"></span>',
+                '<span class="loader" id="tmcLoaderID"><img src="assets/images/loader-aaas.gif"></span>',
                 ctrl.currParentNode );
 
             var request = apiService.checkTrellisLink();

@@ -18,12 +18,13 @@
         document.head.appendChild(script);
     }
 
-    loadCssFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/plugins/emojione/dist/emojione.sprites.css');
+    loadCssFn('vendor/tinymce/plugins/emojione/dist/emojione.sprites.css');
+    loadCssFn('assets/css/stylesheets/rte.css');
 
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/jquery/jquery.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/angular/angular.1.6.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/tinymce.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/plugins/emojione/dist/emojione.picker.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/extended-rte.js');
+    loadScriptFn('vendor/jquery/jquery.min.js');
+    loadScriptFn('vendor/angular/angular.1.6.min.js');
+    loadScriptFn('vendor/tinymce/tinymce.min.js');
+    loadScriptFn('vendor/tinymce/plugins/emojione/dist/emojione.picker.js');
+    loadScriptFn('extended-rte.js');
 
 }());

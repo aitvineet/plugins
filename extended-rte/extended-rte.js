@@ -2561,7 +2561,7 @@ angular.module( 'rte-module', [] )
                         var containerId = 'emojionepicker_' + id;
 
                         $( ".emojiOneWrapper" ).each( function () {
-                            if ( $( this ).children().attr( 'id' ) !==
+                            if ( $( this ).children().attr( 'id' ) !== 
                                 containerId ) {
                                 $( this ).removeClass( 'active' );
                             }
@@ -2569,7 +2569,7 @@ angular.module( 'rte-module', [] )
 
                         $( "#" + containerId ).parent().toggleClass( 'active' );
 
-                        if($( "#" + containerId ).parent().hasClass('active')){
+                        if ( $( "#" + containerId ).parent().hasClass('active') ) {
                             $( "#" + containerId ).css('display','block');
                         }
 
@@ -2578,9 +2578,7 @@ angular.module( 'rte-module', [] )
                     onpostrender: function () {
                         var btn = this;
                         editor.on( 'init', function () {
-                            var id = $( '.' + ctrl.objId + 'class' ).attr(
-                                'id' );
-                            //$( ".mce-i-emoji" ).addClass('emojionepicker-picker');
+                            var id = $( '.' + ctrl.objId + 'class' ).attr('id');
                             $( "#" + id ).emojionePicker( {}, editor, id, ctrl.afterEmojiInsertFn );
                         } );
                     }

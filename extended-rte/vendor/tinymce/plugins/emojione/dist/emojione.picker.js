@@ -245,8 +245,9 @@
 				// HIDE EMOJI CONTAINER ON CLICK ANYWHERE OUTSIDE THE ELEMENT
 				$( document ).on( "click touchstart",
 					function( e ){
+
 						if ( $( "#"  + emojiContainer ).is( ":visible")==false || 
-							$( e.target ).is( ".emojionepicker-picker, .emojione" ) || 
+							$(e.target).is( ".mce-emojionepicker-picker .emojionepicker-picker, .emojione" ) || 
 							$(e.target).hasClass('mce-i-emoji') ||
 							$(e.target).hasClass('mce-i-emoticons') || 
 							$(e.target).children().eq(0).hasClass('mce-i-emoji') ) {

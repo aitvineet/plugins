@@ -153,9 +153,9 @@ angular.module( 'rte-module', [] )
     var extractURL = function() {
         return {
             method: 'GET',
-            //url: "https://api.embed.ly/1/extract?key=:9b9cb98708c9443f9c643dd9d1a41653&url=http://techcrunch.com/2010/11/18/mark-zuckerberg/&maxwidth=500",
-            //url: "https://api.embed.ly/1/extract?key=9b9cb98708c9443f9c643dd9d1a41653&url=@id",
-            url: "https://api.embed.ly/1/oembed?key=9b9cb98708c9443f9c643dd9d1a41653&url=@id",
+            //url: "https://api.embed.ly/1/extract?key=:vsvs9b9cb98708c9443f9c643dd9d1a41653&url=http://techcrunch.com/2010/11/18/mark-zuckerberg/&maxwidth=500",
+            //url: "https://api.embed.ly/1/extract?key=vsvs9b9cb98708c9443f9c643dd9d1a41653&url=@id",
+            url: "https://api.embed.ly/1/oembed?key=vsvs9b9cb98708c9443f9c643dd9d1a41653&url=@id",
             dataType: 'json',
             stopTracking: true,
             params: {
@@ -306,7 +306,8 @@ angular.module( 'rte-module', [] )
             submitText: "=",
             charCountLimit: "=",
             scrollFlg: "=",
-            clearOnCancel: "="
+            clearOnCancel: "=",
+            linkcb: "@"
         },
         link: linker
     };
@@ -2210,7 +2211,7 @@ angular.module( 'rte-module', [] )
             media_alt_source: false,
             image_dimensions: false,
             image_description: false,
-            valid_elements: 'blockquote,iframe,div[*],span[*],p[*],b,strong,i,em,ul,li,ol,h4',
+            valid_elements: 'blockquote,iframe,div[*],span[*],p[*],b,strong,i,em,ul,li,ol,h4,br',
             //valid_elements : "*[*]",
             extended_valid_elements: "a[href|target=_blank],img[*]",
             paste_data_images: true,
@@ -2990,12 +2991,23 @@ angular.module( 'rte-module', [] )
         }
     };
 
+    ctrl.eRTE_insertFn = function ( tempVal ) {
+        var tempeleRem = $( '.' + ctrl.objId + 'class' ).attr( 'id' );
+        var editorInst = tinyMCE.get( tempeleRem );
+        editorInst.insertContent( tempVal, false );
+    };
+
     ctrl.extractUrl2 = function ( srcUrl ) {
         if ( srcUrl !== '' ) {
-            ctrl.rmeUrl = '';
-            ctrl.rmeUrl = srcUrl;
-            //$scope.ediModel = ctrl.buildFullModelVal();
-            ctrl.acceptRequest( 'MODMETA', apiService.extractURL(), srcUrl, false );
+            //ctrl.rmeUrl = '';
+            //ctrl.rmeUrl = srcUrl;
+            ////$scope.ediModel = ctrl.buildFullModelVal();
+            //ctrl.acceptRequest( 'MODMETA', apiService.extractURL(), srcUrl, false );
+
+            if ( $scope.linkcb && window[$scope.linkcb] ) {
+                //eRTE_handleRTELinkFn( srcUrl, ctrl.eRTE_insertFn );
+                window[ $scope.linkcb ](srcUrl, ctrl.eRTE_insertFn);
+            }
         }
     };
 
@@ -3032,8 +3044,9 @@ angular.module( 'rte-module', [] )
             dataResponse = dataResponse.apiResponse;
             if ( dataResponse.data ) {
                 ctrl.extractApiResponse = dataResponse.data;
-                if ( !( angular.isUndefined( dataResponse.data.description ) ) && ( dataResponse.data.description !==
-                        '' ) ) {
+                if ( !( angular.isUndefined( dataResponse.data.description ) ) && 
+                    ( dataResponse.data.description !== '' ) ) {
+
                     /*var tempv1 = '', tempv2 = '';
                     if( !ctrl.rmeUrl || (ctrl.rmeUrl && ctrl.rmeUrl === '') ) { 
                         if ( !(angular.isUndefined(dataResponse.data.url)) && (dataResponse.data.url !== '') ){
@@ -3069,10 +3082,11 @@ angular.module( 'rte-module', [] )
                     ctrl.modelDataRMEData = tempv2;
                     ctrl.setModelRMEVal(tempv1 + tempv2);
                     ctrl.updateModelValRME();*/
-                    if ( !( angular.isUndefined( dataResponse.data.provider_name ) ) &&
+
+                    /*if ( !( angular.isUndefined( dataResponse.data.provider_name ) ) &&
                         dataResponse.data.provider_name !== '' ) {
                         ctrl.makeLinkPreview( dataResponse.data, objectId );
-                    }
+                    }*/
 
                 } else {
                     //ctrl.updateModelValRME();

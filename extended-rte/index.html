@@ -7,6 +7,16 @@
 
     <script type="text/javascript" src="script.js"></script>
 
+    <script>
+      function eRTE_handleRTELinkFn( tempLink, eRTE_CBFn ) {
+        if ( eRTE_CBFn ) {
+          setTimeout(function(){
+            eRTE_CBFn('<br/><div class="tinymcd-img"><b>Preview Heading</b><br/><span><img class="rem-preview" src="http://www.google.com/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png">Preview Summary Text Preview Summary TextPreview Summary <a href="'+tempLink+'">'+tempLink+'</a> TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary TextPreview Summary Text</span><br/></div>');
+          }, 999)
+        }
+      }
+    </script>
+
   </head>
 
   <body>
@@ -14,10 +24,11 @@
     <p>Extended Rich Text Editor</p>
     <br/><br/>
 
-    <div>
+    <div class="new_toolbar_class">
       <label>Sample 1</label>
       <extended-Rte edi-id="textareaID1" 
-        edi-model="variable1" char-count-limit="2500">
+        edi-model="variable1" char-count-limit="2500" 
+        linkcb="eRTE_handleRTELinkFn" >
       </extended-Rte>
       <br/>
     </div> 

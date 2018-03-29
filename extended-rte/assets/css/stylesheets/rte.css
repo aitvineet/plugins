@@ -84,6 +84,11 @@ img.emojione-trellis {
   display: block !important;
 }
 
+
+.mce-container-body.mce-abs-layout{
+  height:80vh !important;
+}
+
 @media only screen and (max-width: 960px) {
   .emojionepicker {
     margin: 0% 0% 0% 0% !important;

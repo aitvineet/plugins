@@ -17,9 +17,10 @@ img.emojione-trellis {
 .emojiOneWrapper {
   position: absolute;
   z-index: 99;
-  bottom: 54px !important;
+  bottom: 0px !important;
   display: none !important;
-  width: 100%;
+  width: auto;
+  left: 295px;
 }
 .emojiOneWrapper .emojionepicker {
   /*position: absolute !important;*/
@@ -28,7 +29,7 @@ img.emojione-trellis {
   margin-top: 0px !important;
   z-index: 9;
   left: 0% !important;
-  margin: 0% 0% 0% 46%;
+  margin:0;
 }
 .emojiOneWrapper .emojionepicker nav {
   position: relative;
@@ -100,3 +101,32 @@ img.emojione-trellis {
     right: 0px;
   }
 }
+.new_toolbar_class{
+  position: relative;
+}
+.new_toolbar_class .mce-toolbar-grp{
+  position: absolute !important;
+  bottom: 0;
+}
+.emojione{
+  cursor: pointer;
+}
+.mce-content-body{
+  padding-bottom: 0px !important;
+}
+.new_toolbar_class .mce-content-body{
+  padding-bottom: 50px !important;
+}
+
+/*.mce-container iframe{
+  min-height:103px !important;
+  height:inherit !important;
+}
+.mce-content-body{
+  min-height:150px !important;
+}
+.new_toolbar_class .mce-container iframe{
+  min-height:135px !important;
+
+}*/
+

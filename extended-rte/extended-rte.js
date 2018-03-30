@@ -196,7 +196,7 @@ angular.module( 'rte-module', [] )
         ' </div>' +
         ' <div class="{{disableTextArea ? \'textarea-hide\' : \'\' }}">' +
         '  <div class="textEditorStyle {{(focusBorder && aRTECtrl.hasFocus) ? aRTECtrl.hasFocus : \'\' }} {{(aRTECtrl.hidemenubarFlg) ? aRTECtrl.hidemenubarFlgCls : \'\' }}">' +
-        '   <div id="@@@masterDivID@@@" ng-init="aRTECtrl.init()">' +
+        '   <div class="new_toolbar_class" id="@@@masterDivID@@@" ng-init="aRTECtrl.init()">' +
         '    <div class="containerClassImp @@@classid@@@"></div>' +
         '   </div>' +
         '   <div class="rmeBlock" ng-if="aRTECtrl.rmeSupportFlg && aRTECtrl.getModelRMEVal().length">' +
@@ -2995,6 +2995,7 @@ angular.module( 'rte-module', [] )
         var tempeleRem = $( '.' + ctrl.objId + 'class' ).attr( 'id' );
         var editorInst = tinyMCE.get( tempeleRem );
         editorInst.insertContent( tempVal, false );
+        ctrl.focusOnEndFn();
     };
 
     ctrl.extractUrl2 = function ( srcUrl ) {

@@ -1,4 +1,4 @@
 # plugins
 
-By - ViNeEt 
+By - ViNeEt (vineet@atlogys.com)
 ## Atlogys Technical Consultancy

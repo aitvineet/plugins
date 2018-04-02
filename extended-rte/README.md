@@ -12,6 +12,9 @@ features and benefits offered by this plugin are:<br/>
 4. Rich text editor (Basic HTML support).<br/><br/>
 
 # Getting Started:<br/>
+Use Git or checkout with SVN using the web URL. Use `extended-rte` folder for including editor plugin.
+https://github.com/vineet-atlogys/plugins.git
+`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.
 
 # Installing:<br/>
 1. Include `script.cdn.js` file to your HTML code:<br/>
@@ -21,15 +24,15 @@ features and benefits offered by this plugin are:<br/>
 3. Use '<extended-Rte>' tag where you whish to include the editor in your application.<br/>
     `<extended-Rte edi-id="textareaID2" edi-model="variable2"></extended-Rte>`<br/>
 
-######Usage Example Links:<br/>
+## Usage Example Links:<br/>
 https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html
 https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html
 
 ## Supported attributes:<br/>
-`edi-id="textareaID2"` (Attribute Type = String | Unique Id assigned to every editor instance.)<br/>
-` edi-model="variable2"` (Attribute Type = Variable(type String) | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
-`char-count-limit="2500"` (Attribute Type = int | Flag for showing the char count while you updating the editor's content)<br/>
-`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = Variable(type Function) | Callback function used for autolink detection and link processing)<br/>
+`edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>
+` edi-model="variable2"` (Attribute Type = `Variable(type String)` | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
+`char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>
+`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
 
 # Demo:<br/>
 https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>

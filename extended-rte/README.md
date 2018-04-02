@@ -14,16 +14,16 @@ features and benefits offered by this plugin are:<br/>
 # Getting Started:<br/>
 
 # Installing:<br/>
-    1. Include `script.cdn.js` file to your HTML code:<br/>
-        `<script type="text/javascript" src="https://gitcdn.link/repo/vineet-atlogys/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
-    2. Include `rte-module` to your HTML tag.<br/>
-        `<html ng-app="rte-module">`<br/>
-    3. Use '<extended-Rte>' tag where you whish to include the editor in your application.<br/>
-        `<extended-Rte edi-id="textareaID2" edi-model="variable2"></extended-Rte>`<br/>
+1. Include `script.cdn.js` file to your HTML code:<br/>
+    `<script type="text/javascript" src="https://gitcdn.link/repo/vineet-atlogys/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
+2. Include `rte-module` to your HTML tag.<br/>
+    `<html ng-app="rte-module">`<br/>
+3. Use '<extended-Rte>' tag where you whish to include the editor in your application.<br/>
+    `<extended-Rte edi-id="textareaID2" edi-model="variable2"></extended-Rte>`<br/>
 
-    ######Usage Example Links:<br/>
-    https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html
-    https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html
+######Usage Example Links:<br/>
+https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html
+https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html
 
 ## Supported attributes:<br/>
 `edi-id="textareaID2"` (Attribute Type = String | Unique Id assigned to every editor instance.)<br/>
@@ -32,6 +32,6 @@ features and benefits offered by this plugin are:<br/>
 `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = Variable(type Function) | Callback function used for autolink detection and link processing)<br/>
 
 # Demo:<br/>
-https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/
-https://plnkr.co/edit/9uLH9bOQpL4TIzxJ3wle?p=preview
+https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>
+https://plnkr.co/edit/9uLH9bOQpL4TIzxJ3wle?p=preview<br/>
 https://embed.plnkr.co/9uLH9bOQpL4TIzxJ3wle/

@@ -13,7 +13,7 @@ features and benefits offered by this plugin are:<br/>
 
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
-https://github.com/vineet-atlogys/plugins.git<br/>
+https://github.com/vineet-atlogys/plugins.git<br/><br/>
 `Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.
 
 # Installing:<br/>

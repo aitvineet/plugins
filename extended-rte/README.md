@@ -14,7 +14,7 @@ features and benefits offered by this plugin are:<br/>
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
 https://github.com/vineet-atlogys/plugins.git<br/><br/>
-`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.
+`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.<br/><br/>
 
 # Installing:<br/>
 1. Include `script.cdn.js` file to your HTML code:<br/>
@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rt
 `edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>
 ` edi-model="variable2"` (Attribute Type = `Variable(type String)` | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
 `char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>
-`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
+`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/><br/>
 
 # Demo:<br/>
 https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>

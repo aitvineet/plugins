@@ -12,8 +12,8 @@ features and benefits offered by this plugin are:<br/>
 4. Rich text editor (Basic HTML support).<br/><br/>
 
 # Getting Started:<br/>
-Use Git or checkout with SVN using the web URL. Use `extended-rte` folder for including editor plugin.
-https://github.com/vineet-atlogys/plugins.git
+Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
+https://github.com/vineet-atlogys/plugins.git<br/>
 `Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.
 
 # Installing:<br/>
@@ -28,7 +28,7 @@ https://github.com/vineet-atlogys/plugins.git
 https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html
 https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html
 
-## Supported attributes:<br/>
+## Supported attributes inside editor tag:<br/>
 `edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>
 ` edi-model="variable2"` (Attribute Type = `Variable(type String)` | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
 `char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>

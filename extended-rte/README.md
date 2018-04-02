@@ -1,6 +1,6 @@
 # Extended Rich Text Editor (Extended-RTE)<br/><br/>
 
-# Objective:<br/><br/>
+# Objective:<br/>
 This projects aims at developing a web based plugin which would cater the needs of the website
 developers for developing an independent HTML editor with rich text capabilities. Using this plugin
 will inturn reduce the development effort required to produce a complex web application with high user

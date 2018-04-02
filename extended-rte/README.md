@@ -28,7 +28,7 @@ https://github.com/vineet-atlogys/plugins.git<br/><br/>
 `edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>
 ` edi-model="variable2"` (Attribute Type = `Variable(type String)` | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
 `char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>
-`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/><br/>
+`linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
 
 ## Usage Example Links:<br/>
 https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html<br/>

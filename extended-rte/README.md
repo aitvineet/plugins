@@ -1,16 +1,16 @@
 # Extended Rich Text Editor (Extended-RTE)
-This projects aims at developing a web based plugin which would cater the needs of the website
+This projects aims at developing a web based plugin which would cater the needs of website
 developers for developing an independent HTML editor with rich text capabilities. Using this plugin
 will inturn reduce the development effort required to produce a complex web application with high user
-interation. It can be easily customized as per requirements to suit the needs of different projects. The
-idea has been succesfully tetsted and implemented in other projects.<br/><br/>
+interactions. It can be easily customized as per requirements to suit the needs of different projects. The
+idea has been succesfully tetsted and implemented in other projects.<br/>
 
 The Extended-RTE is comprised of some first of its kind features all packed in one plugin. Some
 features and benefits offered by this plugin are:<br/>
 1. Hyperlink's processing with custom callback function support which can be used RME(Rich media entry) suport for previewing summary data/thumbnail of pasted links.<br/>
 2. Rich Emoticons library integrated.<br/>
 4. Rich text editor (Basic HTML support).<br/><br/>
-
+    
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
 https://github.com/vineet-atlogys/plugins.git<br/><br/>

@@ -31,8 +31,8 @@ https://github.com/vineet-atlogys/plugins.git<br/><br/>
 `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/><br/>
 
 ## Usage Example Links:<br/>
-https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html
-https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html
+https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html<br/>
+https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html<br/>
 
 # Demo:<br/>
 https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>

@@ -6,4 +6,4 @@ Open source library for various web based plugins.
 * Vineet Sharma
 <br/>
 
-#### ViNeEt (vineet@atlogys.com) <br/> Atlogys Technical Consultancy
+#### ViNeEt (vineet@atlogys.com) <br/> [Atlogys Technical Consultancy](http://atlogys.com)

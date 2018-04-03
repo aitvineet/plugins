@@ -14,14 +14,14 @@ features and benefits offered by this plugin are:<br/>
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
 https://github.com/vineet-atlogys/plugins.git<br/><br/>
-`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.cdn.js` file as per the needs.<br/><br/>
+`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.js` file as per the needs.<br/><br/>
 
 # Installing:<br/>
 1. Include `script.cdn.js` file to your HTML code:<br/>
     `<script type="text/javascript" src="https://gitcdn.link/repo/vineet-atlogys/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
 2. Include `rte-module` to your HTML tag.<br/>
     `<html ng-app="rte-module">`<br/>
-3. Use '<extended-Rte>' tag where you whish to include the editor in your application.<br/>
+3. Use `<extended-Rte>` tag where you whish to include the editor in your application.<br/>
     `<extended-Rte edi-id="textareaID2" edi-model="variable2"></extended-Rte>`<br/>
 
 ## Supported attributes inside editor tag:<br/>

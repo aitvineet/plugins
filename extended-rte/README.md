@@ -10,19 +10,27 @@ features and benefits offered by this plugin are:<br/>
 1. Hyperlink's processing with custom callback function support which can be used RME(Rich media entry) suport for previewing summary data/thumbnail of pasted links.<br/>
 2. Rich Emoticons library integrated.<br/>
 4. Rich text editor (Basic HTML support).<br/><br/>
-    
+
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
 https://github.com/vineet-atlogys/plugins.git<br/><br/>
-`Note:` If AnguarJS is already being used in the application then modify `extended-rte/script.js` file as per the needs.<br/><br/>
 
 # Installing:<br/>
-1. Include `script.cdn.js` file to your HTML code:<br/>
+
+## For non-Angular Applications:
+1. Include `script.cdn.js` file to your `index.html`:<br/>
     `<script type="text/javascript" src="https://gitcdn.link/repo/vineet-atlogys/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
 2. Include `rte-module` to your HTML tag.<br/>
     `<html ng-app="rte-module">`<br/>
 3. Use `<extended-Rte>` tag where you whish to include the editor in your application.<br/>
-    `<extended-Rte edi-id="textareaID2" edi-model="variable2"></extended-Rte>`<br/>
+    `<extended-Rte edi-id="uniqueId" edi-model="modelVariable"></extended-Rte>`<br/>
+
+## For Angular Applications:
+1. Include files(that are not already include in your app) from `script.cdn.js` to your `index.html`.<br/>
+2. Include `rte-module` to Angular module.<br/>
+   `angular.module( "exampleApp", ["rte-module"])`<br/>
+3. Use `<extended-Rte>` tag where you whish to include the editor in your application.<br/>
+    `<extended-Rte edi-id="uniqueId" edi-model="modelVariable"></extended-Rte>`<br/><br/>
 
 ## Supported attributes inside editor tag:<br/>
 `edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>

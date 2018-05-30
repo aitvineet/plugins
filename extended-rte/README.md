@@ -26,7 +26,7 @@ https://github.com/vineet-atlogys/plugins.git<br/><br/>
     `<extended-Rte edi-id="uniqueId" edi-model="modelVariable"></extended-Rte>`<br/>
 
 ## For Angular Applications:
-1. Include files(that are not already include in your app) from `script.cdn.js` to your `index.html`.<br/>
+1. Include files(that are not already included in your app) from `script.cdn.js` file to your `index.html`.<br/>
 2. Include `rte-module` to Angular module.<br/>
    `angular.module( "exampleApp", ["rte-module"])`<br/>
 3. Use `<extended-Rte>` tag where you whish to include the editor in your application.<br/>

@@ -2,7 +2,7 @@
 Open source library for various web based plugins.
 <br/>
 
-# Authors
+# Authors 
 * Vineet Sharma
 <br/>
 

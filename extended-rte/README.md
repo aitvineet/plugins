@@ -7,7 +7,7 @@ idea has been succesfully tetsted and implemented in other projects.<br/>
 
 The Extended-RTE is comprised of some first of its kind features all packed in one plugin. Some
 features and benefits offered by this plugin are:<br/>
-1. Hyperlink's processing with custom callback function support which can be used RME(Rich media entry) suport for previewing summary data/thumbnail of pasted links.<br/>
+1. Processing Hyperlinks with custom callback function support that can be used as RME(Rich media entry) suport for previewing summary data/thumbnail of pasted links.<br/>
 2. Rich Emoticons library integrated.<br/>
 4. Rich text editor (Basic HTML support).<br/><br/>
 

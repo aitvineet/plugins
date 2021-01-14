@@ -57,4 +57,4 @@ https://embed.plnkr.co/9uLH9bOQpL4TIzxJ3wle/<br/>
 * Vineet Sharma
 <br/>
 
-#### [ViNeEt](https://www.linkedin.com/in/vineet300688) (vineet@atlogys.com) <br/> [Atlogys Technical Consultancy](http://atlogys.com)
+#### [ViNeEt](https://www.linkedin.com/in/vineet300688) (vineet300688@gmail.com) <br/>

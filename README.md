@@ -48,9 +48,9 @@ https://github.com/aitvineet/plugins.git<br/><br/>
 * https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/><br/>
 
 ## Demo:<br/>
-* <a href="https://plnkr.co/edit/EL350y9Y6h2mKhpH" target="_blank">Demo Preview #1</a>
-* <a href="https://embed.plnkr.co/EL350y9Y6h2mKhpH/" target="_blank">Demo Preview #2</a>
-* <a href="https://plnkr.co/edit/BbCPVDssTbHK1yG9" target="_blank">Demo Preview #3</a><br/><br/>
+* [Demo Preview #1](https://plnkr.co/edit/EL350y9Y6h2mKhpH)<br/>
+* [Demo Preview #2](https://embed.plnkr.co/EL350y9Y6h2mKhpH)<br/>
+* [Demo Preview #3](https://plnkr.co/edit/BbCPVDssTbHK1yG9)<br/><br/>
 
 # Authors: <br/>
 

@@ -43,18 +43,19 @@ https://github.com/aitvineet/plugins.git<br/><br/>
 `char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>
 `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
 
-## Usage Example Links:<br/>
+## Usage Examples:<br/>
+https://raw.githubusercontent.com/aitvineet/plugins/master/demo/extended-rte/index.html<br/>
 https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/>
-https://raw.githubusercontent.com/aitvineet/plugins/master/demo/extended-rte/index.html<br/><br/>
 
-# Demo:<br/>
-https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>
-https://plnkr.co/edit/9uLH9bOQpL4TIzxJ3wle?p=preview<br/>
-https://embed.plnkr.co/9uLH9bOQpL4TIzxJ3wle/<br/>
 
-<br/>
-# Authors 
-* Vineet Sharma
-<br/>
+## Demo:<br/>
+[Demo Preview 1](https://embed.plnkr.co/EL350y9Y6h2mKhpH/)<br/>
+[Demo Preview 2](https://plnkr.co/edit/9uLH9bOQpL4TIzxJ3wle?p=preview)<br/>
+[Demo Preview 3](https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/)<br/>
 
-#### [ViNeEt](https://www.linkedin.com/in/vineet300688) <br/>
+
+# Authors: <br/>
+
+* [Vineet Sharma](https://www.linkedin.com/in/vineet300688)<br/>
+
+#### [ViNeEt](https://www.linkedin.com/in/vineet300688)<br/>

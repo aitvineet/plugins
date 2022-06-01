@@ -22,7 +22,7 @@ https://github.com/aitvineet/plugins.git<br/><br/>
 
 # Installing:<br/>
 
-## For non-Angular Applications:
+## For Non-Angular Applications:
 1. Include `script.cdn.js` file to your `index.html`:<br/>
     `<script type="text/javascript" src="https://gitcdn.link/repo/aitvineet/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
 2. Include `rte-module` to your HTML tag.<br/>
@@ -41,11 +41,11 @@ https://github.com/aitvineet/plugins.git<br/><br/>
 * `edi-id="textareaID2"` (Attribute Type = `String` | Unique Id assigned to every editor instance.)<br/>
 * ` edi-model="variable2"` (Attribute Type = `Variable(type String)` | Unique Variable assigned to every editor instance which holds the final editor value i.e HTML code.)<br/>
 * `char-count-limit="2500"` (Attribute Type = `int` | Flag for showing the char count while you updating the editor's content)<br/>
-* `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
+* `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/><br/>
 
 ## Usage Examples:<br/>
 * https://raw.githubusercontent.com/aitvineet/plugins/master/demo/extended-rte/index.html<br/>
-* https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/>
+* https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/><br/>
 
 ## Demo:<br/>
 * [Demo Preview 1](https://plnkr.co/edit/EL350y9Y6h2mKhpH?preview)<br/>

@@ -2175,17 +2175,17 @@ angular.module( 'rte-module', [] )
             theme: "modern",
             ui_container: (apiService.isMobile())?'#anotationBlock':'',
             skin: 'trellis',
-            skin_url: 'https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/rte/skins/trellis',
+            skin_url: 'https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/assets/rte/skins/trellis',
             menubar: false,
             statusbar: false,
             resize: false,
             inline: ctrl.inlineFlg,
             //fixed_toolbar_container: "#mytoolbar",
-            content_css: "https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/css/style.css, "+ 
-                "https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/css/popup.css, "+ 
+            content_css: "https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/assets/css/style.css, "+ 
+                "https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/assets/css/popup.css, "+ 
                 "https://cloud.webtype.com/css/60a0fc32-0816-4858-9fb8-6ae4f6c1aa0a.css, "+ 
-                "https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/css/style.css, "+ 
-                "https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/css/stylesheets/aaas.css",
+                "https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/assets/css/style.css, "+ 
+                "https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/assets/css/stylesheets/aaas.css",
             /*plugins: [
                "autoresize advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker",
                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",

@@ -18,13 +18,13 @@ features and benefits offered by this plugin are:<br/>
 
 # Getting Started:<br/>
 Use Git or checkout with SVN using the web URL. Copy `extended-rte` folder in your app for including editor plugin.
-https://github.com/vineet-atlogys/plugins.git<br/><br/>
+https://github.com/aitvineet/plugins.git<br/><br/>
 
 # Installing:<br/>
 
 ## For non-Angular Applications:
 1. Include `script.cdn.js` file to your `index.html`:<br/>
-    `<script type="text/javascript" src="https://gitcdn.link/repo/vineet-atlogys/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
+    `<script type="text/javascript" src="https://gitcdn.link/repo/aitvineet/plugins/master/extended-rte/script.cdn.js"></script>`<br/>
 2. Include `rte-module` to your HTML tag.<br/>
     `<html ng-app="rte-module">`<br/>
 3. Use `<extended-Rte>` tag where you whish to include the editor in your application.<br/>
@@ -44,8 +44,8 @@ https://github.com/vineet-atlogys/plugins.git<br/><br/>
 `linkcb="eRTE_handleRTELinkFn"` (Attribute Type = `Variable(type Function)` | Callback function used for autolink detection and link processing)<br/>
 
 ## Usage Example Links:<br/>
-https://gitcdn.link/repo/vineet-atlogys/plugins/master/demo/extended-rte/index.html<br/>
-https://raw.githubusercontent.com/vineet-atlogys/plugins/master/demo/extended-rte/index.html<br/><br/>
+https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/>
+https://raw.githubusercontent.com/aitvineet/plugins/master/demo/extended-rte/index.html<br/><br/>
 
 # Demo:<br/>
 https://embed.plnkr.co/tXTnuhJYmApEZS2e033V/<br/>
@@ -57,4 +57,4 @@ https://embed.plnkr.co/9uLH9bOQpL4TIzxJ3wle/<br/>
 * Vineet Sharma
 <br/>
 
-#### [ViNeEt](https://www.linkedin.com/in/vineet300688) (vineet300688@gmail.com) <br/>
+#### [ViNeEt](https://www.linkedin.com/in/vineet300688) <br/>

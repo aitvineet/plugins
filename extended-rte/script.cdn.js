@@ -18,13 +18,15 @@
         document.head.appendChild(script);
     }
 
-    loadCssFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/plugins/emojione/dist/emojione.sprites.css');
-    loadCssFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/assets/css/stylesheets/rte.css');
+    var repoPath = 'https://gitcdn.link/repo/aitvineet/plugins/dev/extended-rte/';
 
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/jquery/jquery.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/angular/angular.1.6.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/tinymce.min.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/vendor/tinymce/plugins/emojione/dist/emojione.picker.js');
-    loadScriptFn('https://gitcdn.link/repo/vineet-atlogys/plugins/dev/extended-rte/extended-rte.js');
+    loadCssFn(repoPath + 'vendor/tinymce/plugins/emojione/dist/emojione.sprites.css');
+    loadCssFn(repoPath + 'assets/css/stylesheets/rte.css');
+
+    loadScriptFn(repoPath + 'vendor/jquery/jquery.min.js');
+    loadScriptFn(repoPath + 'vendor/angular/angular.1.6.min.js');
+    loadScriptFn(repoPath + 'vendor/tinymce/tinymce.min.js');
+    loadScriptFn(repoPath + 'vendor/tinymce/plugins/emojione/dist/emojione.picker.js');
+    loadScriptFn(repoPath + 'extended-rte.js');
 
 }());

@@ -48,13 +48,13 @@ https://github.com/aitvineet/plugins.git<br/><br/>
 * https://gitcdn.link/repo/aitvineet/plugins/master/demo/extended-rte/index.html<br/><br/>
 
 ## Demo:<br/>
-* [Demo Preview 1](https://plnkr.co/edit/EL350y9Y6h2mKhpH?preview)<br/>
+* [Demo Preview 1](https://plnkr.co/edit/EL350y9Y6h2mKhpH)<br/>
 * [Demo Preview 2](https://embed.plnkr.co/EL350y9Y6h2mKhpH/)<br/>
-* [Demo Preview 3](https://plnkr.co/edit/EL350y9Y6h2mKhpH)<br/><br/>
+* [Demo Preview 3](https://plnkr.co/edit/BbCPVDssTbHK1yG9)<br/><br/>
 
 # Authors: <br/>
 
 * [Vineet Sharma](https://www.linkedin.com/in/vineet300688)<br/>
 
 ------------------------------------------------------------
-#### [ViNeEt](https://www.linkedin.com/in/vineet300688)<br/>
+#### [ViNeEt](https://www.linkedin.com/in/vineet300688) (vineet300688@gmail.com)<br/>
